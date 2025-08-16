@@ -96,6 +96,7 @@ bun db:studio        # Open Drizzle Studio
 ## TODO
 
 - [ ] Implement RBAC (Role-Based Access Control) checks
+- [ ] API token authentication
 - [ ] API documentation
 - [ ] Add audit logging and compliance features
 - [ ] ?
