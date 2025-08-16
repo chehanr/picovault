@@ -1,6 +1,7 @@
 {
 	"name": "picovault",
 	"private": true,
+	"license": "AGPL-3.0",
 	"workspaces": [
 		"apps/*",
 		"packages/*"
