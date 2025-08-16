@@ -1,8 +1,12 @@
 # PicoVault
 
+⚠️ **Under Active Development** - This project is currently under active development. Features may be incomplete and breaking changes are expected.
+
 Self-hostable secrets management for small development teams. Securely store, manage, and inject secrets into your applications.
 
 ## Overview
+
+⚠️ **Not recommended for production use** - PicoVault is designed for development teams and small-scale deployments, not production environments requiring enterprise-grade security.
 
 PicoVault provides a simple, secure way to manage application secrets with:
 
@@ -38,3 +42,10 @@ Create `picovault.json` in your project:
   "projectId": "project-uuid"
 }
 ```
+
+## TODO
+
+- [ ] Implement RBAC (Role-Based Access Control) checks
+- [ ] API documentation
+- [ ] Add audit logging and compliance features
+- [ ] ?
