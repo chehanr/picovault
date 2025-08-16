@@ -1,0 +1,38 @@
+{
+	"name": "@picovault/auth",
+	"version": "0.0.0",
+	"type": "module",
+	"main": "./src/index.ts",
+	"types": "./src/index.ts",
+	"exports": {
+		".": {
+			"import": "./src/index.ts",
+			"types": "./src/index.ts"
+		},
+		"./server": {
+			"import": "./src/server.ts",
+			"types": "./src/server.ts"
+		},
+		"./client": {
+			"import": "./src/client.ts",
+			"types": "./src/client.ts"
+		}
+	},
+	"scripts": {
+		"check-types": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@picovault/db": "workspace:*",
+		"better-auth": "^1.3.4",
+		"drizzle-orm": "^0.44.4"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.2.19",
+		"typescript": "^5.9.2"
+	},
+	"peerDependencies": {
+		"better-auth": "^1.3.4",
+		"drizzle-orm": "^0.44.4"
+	},
+	"private": true
+}

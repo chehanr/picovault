@@ -1,0 +1,32 @@
+{
+	"name": "picovault",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"lint": "biome check . --write",
+		"lint:check": "biome check .",
+		"dev": "turbo dev",
+		"build": "turbo build",
+		"check-types": "turbo check-types",
+		"dev:native": "turbo -F native dev",
+		"dev:web": "turbo -F web dev",
+		"dev:server": "turbo -F @picovault/server dev",
+		"db:push": "turbo -F @picovault/server db:push",
+		"db:studio": "turbo -F @picovault/server db:studio",
+		"db:generate": "turbo -F @picovault/server db:generate",
+		"db:migrate": "turbo -F @picovault/server db:migrate",
+		"db:start": "turbo -F @picovault/server db:start",
+		"db:watch": "turbo -F @picovault/server db:watch",
+		"db:stop": "turbo -F @picovault/server db:stop",
+		"db:down": "turbo -F @picovault/server db:down"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@biomejs/biome": "^2.1.2",
+		"turbo": "^2.5.4"
+	},
+	"packageManager": "bun@1.2.19"
+}
