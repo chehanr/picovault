@@ -43,6 +43,56 @@ Create `picovault.json` in your project:
 }
 ```
 
+## Development
+
+### Prerequisites
+
+- [Bun](https://bun.sh/) (package manager and runtime)
+- [Docker](https://docker.com/) and Docker Compose
+
+### Quick Start
+
+1. **Clone and install dependencies**
+
+   ```bash
+   git clone <repository-url>
+   cd picovault
+   bun install
+   ```
+
+2. **Start database**
+
+   ```bash
+   bun db:start
+   ```
+
+3. **Run migrations**
+
+   ```bash
+   bun db:migrate
+   ```
+
+4. **Start development servers**
+
+   ```bash
+   bun dev
+   ```
+
+Access the application:
+
+- Web UI: <http://localhost:3001>
+- API Server: <http://localhost:3000>
+
+### Available Commands
+
+```bash
+bun dev              # Start all applications
+bun build            # Build all applications
+bun check-types      # TypeScript check
+bun lint             # Format and lint code
+bun db:studio        # Open Drizzle Studio
+```
+
 ## TODO
 
 - [ ] Implement RBAC (Role-Based Access Control) checks
